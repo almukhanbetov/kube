@@ -1,0 +1,41 @@
+# Go
+/bin/
+/obj/
+/*.exe
+/*.dll
+/*.so
+/*.dylib
+*.test
+*.out
+
+# Go modules
+vendor/
+
+# Dependency directories (Go 1.18+)
+gocache/
+coverage.out
+
+# VSCode & Goland
+.vscode/
+.idea/
+
+# Node.js / Vite (если есть frontend)
+node_modules/
+dist/
+build/
+.env
+*.env.local
+
+# Logs
+*.log
+
+# Docker
+*.pid
+*.tar
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Kubernetes
+*.bak
