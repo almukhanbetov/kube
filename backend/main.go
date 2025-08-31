@@ -10,6 +10,7 @@ import (
 	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/joho/godotenv"
 )
+
 func main() {
 	// Загружаем переменные из .env
 	err := godotenv.Load()
@@ -47,5 +48,5 @@ func main() {
 		c.JSON(200, gin.H{"message": "pong", "time": now})
 	})
 
-	r.Run(":8284")
+	r.Run("0.0.0.0:8080")
 }

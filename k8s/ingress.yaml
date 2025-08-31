@@ -3,7 +3,8 @@ kind: Ingress
 metadata:
   name: app-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+
 spec:
   rules:
     - host: 89.207.255.98.nip.io
