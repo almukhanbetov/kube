@@ -1,0 +1,21 @@
+k8s/
+├── backend/
+│   ├── deployment.yaml
+│   └── service.yaml
+├── frontend/
+│   ├── deployment.yaml
+│   └── service.yaml
+├── postgres/
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   └── secret.yaml
+└── ingress.yaml
+
+kubectl apply -f k8s/postgres/
+kubectl apply -f k8s/backend/
+kubectl apply -f k8s/frontend/
+kubectl apply -f k8s/ingress.yaml
+
+kubectl get pods
+kubectl get svc
+kubectl get ingress
